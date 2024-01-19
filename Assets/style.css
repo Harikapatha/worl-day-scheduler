@@ -1,0 +1,49 @@
+
+
+/*Set up a custom color*/
+:root   {
+    --current-color : rgb(244, 97, 78);
+    --past-color : rgb(165, 163, 163);
+    --future-color : rgb(135, 167, 135);
+}
+
+.present textarea  {
+    background-color: var(--current-color);
+}
+
+.past textarea  {
+    background-color: var(--past-color);
+}
+
+.future textarea    {
+    background-color: var(--future-color);
+}
+
+.localStorage-color {
+    color: red;
+    font-style: italic;
+}
+
+.hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+
+/*pseudo element to set up a style when the description class is being focused.*/
+.description:focus   {
+    border: 3px solid black;
+}
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06aed5;
+    color: white;
+  }
+
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }  
